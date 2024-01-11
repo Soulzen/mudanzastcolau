@@ -1,0 +1,29 @@
+/* "p-4 flex justify-between items-center" */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.nav_item {
+  padding: 0.25em;
+}
+
+.nav_item--contact {
+  padding-bottom: 1em;
+}
+
+.nav_item:hover,
+.nav_item:focus {
+  opacity: 0.75;
+}
+
+.nav_link {
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  font-size: 18px;
+  font-weight: 700;
+}

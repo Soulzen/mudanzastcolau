@@ -1,0 +1,51 @@
+.header {
+  background-color: rgb(17 24 39);
+  color: #fff;
+  /* padding: 0.5rem 1rem; */
+  width: 100%;
+  /* "flex items-center justify-between bg-gray-900 text-white px-4 py-2 w-full */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* "flex items-center space-x-2" */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.logo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* "font-bold text-lg" */
+.heading {
+  font-weight: 700;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+.nav_toggle {
+  /* "text-white text-2xl focus:outline-none" */
+  all: unset;
+  color: #fff;
+  background-color: rgb(17 24 39);
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  padding: 1rem;
+}
+
+.nav_toggle:focus,
+.nav_toggle:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
