@@ -31,9 +31,10 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
-header {
+/* header {
   background-color: var(--clr-terciary);
   text-align: center;
   padding: 0.4em 0;
@@ -42,7 +43,7 @@ header {
 footer {
   background-color: var(--clr-secondary);
   padding: 2em 0;
-}
+} */
 
 ul {
   list-style: none;
@@ -54,4 +55,5 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+  color: inherit;
 }

@@ -7,12 +7,15 @@
   padding: 1em;
 }
 
-.nav_item {
-  padding: 0.25em;
+.navbar_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: center;
 }
 
-.nav_item--contact {
-  padding-bottom: 1em;
+.nav_item {
+  padding: 0.25em;
 }
 
 .nav_item:hover,
