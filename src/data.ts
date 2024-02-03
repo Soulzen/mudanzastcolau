@@ -1,19 +1,6 @@
-export interface Hero {
-  title: string
-  subtitle: string
-  button: string
-}
-
 export interface Benefit {
   title: string
   description: string
-}
-
-export const hero: Hero = {
-  title: "Mudanzas Profesionales para su tranquilidad",
-  subtitle:
-    "Simplifica tu mudanza con Transportes TColau: Experiencia, confiabilidad y cuidado",
-  button: "Obtener presupuesto"
 }
 
 export const benefits: Benefit[] = [

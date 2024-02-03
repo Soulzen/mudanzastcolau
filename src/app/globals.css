@@ -4,8 +4,8 @@
   --clr-primary: #6f737f;
   --clr-secondary: #3b4050;
   --clr-terciary: #2e323f;
-  --clr-accent: #a59678;
-  --clr-accent-soft: #f1f1f1;
+  --clr-accent: hsl(40, 20%, 50%);
+  --clr-accent-soft: hsl(40, 20%, 90%);
   --clr-white: #ffffff;
   --clr-black: #000000;
 

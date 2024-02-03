@@ -28,6 +28,10 @@
   padding: 0 0 0.5em;
 }
 
+.hero__title_span {
+  color: var(--clr-accent);
+}
+
 .hero__text {
   font-family: var(--font-basic);
   font-size: 1.125rem;
@@ -39,8 +43,8 @@
 .hero__button {
   display: inline-block;
   margin: 1.5em 0;
-  padding: 0.75em 1.5em;
-  border-radius: 100px;
+  padding: 0.75em 1.75em;
+  border-radius: 10px;
   background-color: var(--clr-accent);
   color: var(--clr-terciary);
   text-transform: uppercase;

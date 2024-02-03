@@ -3,17 +3,22 @@ import React from "react"
 
 import styles from "./hero_section.module.css"
 
-import { hero } from "@/data"
-
 const HeroSection = () => {
   return (
     <section className={styles.hero__section}>
       <div className={styles.container}>
         <div className={styles.hero__content}>
-          <h1 className={styles.hero__title}>{hero.title}</h1>
-          <p className={styles.hero__text}>{hero.subtitle}</p>
+          <h1 className={styles.hero__title}>
+            Mudanzas{" "}
+            <span className={styles.hero__title_span}>profesionales</span> para
+            su tranquilidad
+          </h1>
+          <p className={styles.hero__text}>
+            Simplifica tu mudanza con Mudanzas TColau: Experiencia,
+            confiabilidad y cuidado
+          </p>
           <a href="/" className={styles.hero__button}>
-            {hero.button}
+            Obtener presupuesto
           </a>
         </div>
 
