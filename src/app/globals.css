@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&family=Urbanist:wght@400;700&display=swap");
+
 :root {
   --clr-primary: #6f737f;
   --clr-secondary: #3b4050;
@@ -7,8 +9,8 @@
   --clr-white: #ffffff;
   --clr-black: #000000;
 
-  --font-basic: "Montserrat", sans-serif;
-  --font-accent: "Oswald", sans-serif;
+  --font-basic: "Figtree", sans-serif;
+  --font-accent: "Urbanist", sans-serif;
 
   /* Azul profundo: #00467f
 Verde fresco: #72a844

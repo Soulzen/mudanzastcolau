@@ -19,10 +19,10 @@ const HeroSection = () => {
 
         <Image
           className={styles.hero__image}
-          src="/hero.jpg"
+          src="/[portrait]moving-van.jpg"
           alt="man carrying boxes"
-          width={615}
-          height={350}
+          width={350}
+          height={615}
           priority
         />
       </div>

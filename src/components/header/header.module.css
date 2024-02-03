@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 0.5em 0;
 }
 
 .container {
@@ -15,7 +16,6 @@
   margin: 0 auto;
 }
 
-/* "flex items-center space-x-2" */
 .brand {
   display: flex;
   align-items: center;
@@ -29,6 +29,7 @@
 }
 
 .heading {
+  font-family: var(--font-basic);
   font-weight: 700;
   font-size: 1.125rem /* 18px */;
   line-height: 1.75rem /* 28px */;

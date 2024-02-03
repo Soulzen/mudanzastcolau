@@ -10,7 +10,7 @@ export interface Benefit {
 }
 
 export const hero: Hero = {
-  title: "Mudanzas Profesionales para tu Tranquilidad",
+  title: "Mudanzas Profesionales para su tranquilidad",
   subtitle:
     "Simplifica tu mudanza con Transportes TColau: Experiencia, confiabilidad y cuidado",
   button: "Obtener presupuesto"
