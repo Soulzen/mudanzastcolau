@@ -4,59 +4,57 @@ export interface Benefit {
 }
 
 export const benefits: Benefit[] = [
+  // ...existing code...
+]
+
+export interface Service {
+  id: number
+  title: string
+  description: string
+  image: string
+}
+
+export const services: Service[] = [
   {
-    title: "Servicio de Mudanza sin Estrés",
+    id: 1,
+    title: "Inventario",
     description:
-      "Equipo profesional que gestiona todos los aspectos de la mudanza, liberando a los clientes de la carga logística y del trabajo pesado."
+      "Nuestro servicio de inventario asegura la documentación y seguimiento preciso de sus pertenencias durante la mudanza, brindando tranquilidad sobre su llegada segura.",
+    image: "/services_images/inventory.jpg"
   },
   {
-    title: "Eficiencia en Mudanzas Comerciales",
+    id: 2,
+    title: "Embalaje",
     description:
-      "Especialización en mudanzas comerciales, garantizando una transición fluida y mínima interrupción para las operaciones comerciales."
+      "Ofrecemos servicios de embalaje profesional para garantizar la seguridad de sus pertenencias durante el transporte, utilizando materiales de embalaje ecológicos.",
+    image: "/services_images/packing.jpg"
   },
   {
-    title: "Materiales de Embalaje Ecológicos",
+    id: 3,
+    title: "Desmontaje y Montaje",
     description:
-      "Ofrecemos opciones de embalaje ecológicas, reduciendo los residuos y fomentando prácticas de mudanza sostenibles."
+      "Nuestro equipo se encarga del desmontaje y montaje de muebles, asegurando que sus pertenencias lleguen a su destino en perfectas condiciones.",
+    image: "/services_images/assembly.jpg"
   },
   {
-    title: "Soluciones de Almacenamiento Seguro",
+    id: 4,
+    title: "Montacargas",
     description:
-      "Almacenamiento temporal o a largo plazo para brindar seguridad a los artículos durante la mudanza."
+      "Contamos con montacargas para facilitar el transporte de artículos pesados y voluminosos, garantizando la seguridad y eficiencia durante el proceso de mudanza.",
+    image: "/services_images/lift_truck.png"
   },
   {
-    title: "Flota de Vehículos Moderna",
+    id: 5,
+    title: "Almacenamiento",
     description:
-      "Camiones de mudanza equipados con tecnología avanzada para garantizar la seguridad y la puntualidad en la entrega."
+      "Ofrecemos soluciones de almacenamiento seguro para sus pertenencias, ya sea a corto o largo plazo, brindando tranquilidad durante el proceso de mudanza.",
+    image: "/services_images/storage.jpg"
   },
   {
-    title: "Cotización Personalizada Gratuita",
+    id: 6,
+    title: "Artículos Frágiles",
     description:
-      "Ofrecemos presupuestos personalizados gratuitos para adaptarnos a las necesidades específicas de cada cliente."
-  },
-  {
-    title: "Conciencia Ambiental",
-    description:
-      "Enfoque en prácticas de mudanza ecológicas, minimizando la huella de carbono para aquellos que buscan opciones sostenibles."
-  },
-  {
-    title: "Experiencia Confiable",
-    description:
-      "Historial probado de mudanzas exitosas respaldado por testimonios de clientes satisfechos."
-  },
-  {
-    title: "Atención al Cliente de Calidad",
-    description:
-      "Servicio al cliente dedicado para abordar preguntas y preocupaciones en todas las etapas del proceso de mudanza."
-  },
-  {
-    title: "Transparencia y Honestidad",
-    description:
-      "Comunicación clara sobre costos, tiempos y procesos para construir confianza con nuestros clientes."
-  },
-  {
-    title: "Seguro de Mudanza Opcional",
-    description:
-      "Opción para adquirir un seguro de mudanza que brinda tranquilidad adicional durante el proceso."
+      "Nuestro equipo se especializa en el transporte de artículos frágiles, asegurando que lleguen a su destino en perfectas condiciones.",
+    image: "/services_images/fragile.jpg"
   }
 ]
