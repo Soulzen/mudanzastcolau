@@ -4,11 +4,11 @@ import React from "react"
 import styles from "./service_card.module.css"
 import { Service } from "../../../data"
 
-interface PropsServiceCard {
+interface ServiceCardProps {
   service: Service
 }
 
-const ServiceCard = ({ service }: PropsServiceCard) => {
+const ServiceCard = ({ service }: ServiceCardProps) => {
   return (
     <div className={styles.service__card}>
       <Image
