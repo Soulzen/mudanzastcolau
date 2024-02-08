@@ -14,7 +14,7 @@ const HeroSection = () => {
             su tranquilidad
           </h1>
           <p className={styles.hero__text}>
-            Simplifica tu mudanza con Mudanzas TColau: Experiencia,
+            Simplifique su mudanza con Mudanzas TColau: Experiencia,
             confiabilidad y cuidado
           </p>
           <a href="/" className={styles.hero__button}>

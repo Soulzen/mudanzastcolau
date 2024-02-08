@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 
 import styles from "./review_card.module.css"
@@ -9,6 +9,24 @@ interface CarouselProps {
 }
 
 const ReviewCard = ({ review }: CarouselProps) => {
+  const [isExpanded, setIsExpanded] = useState(false)
+  const [isTooLong, setIsTooLong] = useState(false)
+
+  const paragraphRef = useRef<HTMLParagraphElement>(null)
+
+  useEffect(() => {
+    if (
+      paragraphRef.current &&
+      paragraphRef.current.textContent &&
+      paragraphRef.current.textContent.length > 150
+    ) {
+      setIsTooLong(true)
+    } else {
+      setIsTooLong(false)
+    }
+    setIsExpanded(false)
+  }, [review])
+
   return (
     <div className={styles.review__card}>
       <Image
@@ -24,7 +42,23 @@ const ReviewCard = ({ review }: CarouselProps) => {
           <span key={index}>⭐</span>
         ))}
       </div>
-      <p className={styles.review__text}>{review.text}</p>
+      <p
+        ref={paragraphRef}
+        className={`${styles.review__text} ${
+          !isExpanded ? styles.collapsed : null
+        }`}
+      >
+        {review.text}
+      </p>
+      {isExpanded ? (
+        <button className={styles.button} onClick={() => setIsExpanded(false)}>
+          Ver menos
+        </button>
+      ) : isTooLong ? (
+        <button className={styles.button} onClick={() => setIsExpanded(true)}>
+          Seguir leyendo...
+        </button>
+      ) : null}
     </div>
   )
 }

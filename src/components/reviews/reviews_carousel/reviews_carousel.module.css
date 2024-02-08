@@ -1,0 +1,68 @@
+.review__carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 0;
+}
+
+.reviewCard__container {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.review__button {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  font-family: var(--font-basic);
+  font-size: 1.5em;
+  font-weight: 700;
+  background-color: var(--clr-accent); /* Add a background color */
+  color: white; /* Change the color of the text to white */
+  transition: all 0.3s ease; /* Add a transition for hover effects */
+}
+
+.review__button:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); /* Increase the box shadow on hover */
+}
+
+.review__button_prev {
+  left: 20px;
+}
+
+.review__button_next {
+  right: 20px;
+}
+
+.pagination {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__button {
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--clr-accent);
+  opacity: 0.5;
+}
+
+.pagination__button_active {
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}

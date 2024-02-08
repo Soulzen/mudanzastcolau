@@ -126,6 +126,7 @@ export const services: Service[] = [
 ]
 
 export interface Review {
+  id: number
   image: string
   name: string
   rating: number
@@ -134,6 +135,7 @@ export interface Review {
 
 export const reviews: Review[] = [
   {
+    id: 0,
     image:
       "https://lh3.googleusercontent.com/a/ACg8ocIMP7c_6lOTmJurTi3wJRlMOHtSSQNoSuMW9eAdvum8=w500-h500-p-rp-mo-br100",
     name: "Anita 1974",
@@ -141,6 +143,7 @@ export const reviews: Review[] = [
     text: "Toni y su equipo nos ayudaron con nuestra mudanza hace unos días. La verdad es que se alargo un poco más de la cuenta debido al volumen de enseres que teníamos, pero no perdieron la sonrisa, fueron amables en todo momento y la acabaron el mismo dia. Todo ha llegado en perfecto estado porque son muy respetuosos y cuidasosos. Totalmente recomendable 👌🏼"
   },
   {
+    id: 1,
     image:
       "https://lh3.googleusercontent.com/a-/ALV-UjXaV9N3mBaFiS3PrKDPQ2DpkehFTY5XK3DNk9PPLKbawDA=w500-h500-p-rp-mo-br100",
     name: "Jonathan Bermúdez",
@@ -148,10 +151,43 @@ export const reviews: Review[] = [
     text: "Super amables y profesionales, precio económico. Hacen muy bien su trabajo y estuve muy satisfecho con el servicio."
   },
   {
+    id: 2,
     image:
       "https://lh3.googleusercontent.com/a-/ALV-UjU0yDA3LjHy1xLqBMuE6wWtFNP9uCe8CK90aI_TQWMqEg=w500-h500-p-rp-mo-br100",
     name: "cristina cubells",
     rating: 5,
     text: "Una mudanza grande,los chicos muy amables y puntuales, desmontar muebles y montar, el transporte según lo acordado , todo se ha trasladado con cuidado y ha llegado en perfecto estado. La atención de Toni genial."
+  },
+  {
+    id: 3,
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjX5-dRD0I-DSp7QVvWUhbW0odfJJZ_JCgliYCQMXwXDWNA=w500-h500-p-rp-mo-ba6-br100",
+    name: "Eloy",
+    rating: 5,
+    text: "Una mudanza excelente con Toni. Se pegaron una buena currada moviendo todas las cajas y muebles. Hicieron dos viajes para poder terminarla en el mismo día ya que no entro todo en uno solo. Son muy profesionales, atentos, serios y fueron cuidadosos con todo, ya que no se rompió nada en el traslado y eso que había cosas de cristal. Que decir del precio de lo mejor que vas a encontrar en valencia. Los recomiendo totalmente y volvería a contratarlos sin duda."
+  },
+  {
+    id: 4,
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVS19sOTwZ-SynUy-pam8sdiSgO5vcqScTocwPh000gLf0=w500-h500-p-rp-mo-br100",
+    name: "Elena Tamarit",
+    rating: 5,
+    text: "Puntualidad, profesionalidad y simpatía a tope! Toni y Alberto nos trataron genial, para recomendar 🙂…"
+  },
+  {
+    id: 5,
+    image:
+      "https://lh3.googleusercontent.com/a/ACg8ocK8boQM-QbB_Uqx-gPF5dvEOHPhJt70WHD4NJFCWqwt=w500-h500-p-rp-mo-br100",
+    name: "Mauricio Arenas",
+    rating: 5,
+    text: "Antoni fue súper amable, siempre dispuesto y me ayudó muchísimo. Encima es muy majo y no dice que no a nada! Lo recomiendo mucho."
+  },
+  {
+    id: 6,
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUgTGOW2q7AlgA7WCke9QwwH4gvz6Y-BKIbQXvcAvJ6x5g=w500-h500-p-rp-mo-br100",
+    name: "Tania Raga Leal",
+    rating: 5,
+    text: "La verdad que muy rápidos y eficientes. Volvería a contratarlos en caso de otra mudanza"
   }
 ]
