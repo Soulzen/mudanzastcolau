@@ -38,8 +38,24 @@
 .review__text {
   font-size: 1rem;
   font-family: var(--font-basic);
-  text-align: center;
+  text-align: left;
   color: var(--clr-accent-soft);
   line-height: 1.5em;
   padding: 0.5em 1em;
+}
+
+.button {
+  margin: 0.5em;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-accent);
+  color: var(--clr-accent);
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.collapsed {
+  max-height: 150px;
+  overflow: hidden;
 }

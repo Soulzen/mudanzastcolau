@@ -18,19 +18,34 @@ const Carousel = ({ reviews }: CarouselProps) => {
   const [touchEnd, setTouchEnd] = useState(0)
 
   const handlePrev = () => {
-    setCurrentReview((prevReview) =>
-      prevReview === 0 ? reviews.length - 1 : prevReview - 1
-    )
+    const reviewCardContainer = document.querySelector(
+      `.${styles.reviewCard__container}`
+    ) as HTMLElement
+    reviewCardContainer.style.opacity = "0"
+    setTimeout(() => {
+      setCurrentReview((prevReview) =>
+        prevReview === 0 ? reviews.length - 1 : prevReview - 1
+      )
+      reviewCardContainer.style.opacity = "1"
+    }, 200)
   }
 
   const handleNext = () => {
-    setCurrentReview((prevReview) =>
-      prevReview === reviews.length - 1 ? 0 : prevReview + 1
-    )
+    const reviewCardContainer = document.querySelector(
+      `.${styles.reviewCard__container}`
+    ) as HTMLElement
+    reviewCardContainer.style.opacity = "0"
+    setTimeout(() => {
+      setCurrentReview((prevReview) =>
+        prevReview === reviews.length - 1 ? 0 : prevReview + 1
+      )
+      reviewCardContainer.style.opacity = "1"
+    }, 200)
   }
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.targetTouches[0].clientX)
+    setTouchEnd(e.targetTouches[0].clientX)
   }
 
   const handleTouchMove = (e: React.TouchEvent) => {
@@ -40,9 +55,7 @@ const Carousel = ({ reviews }: CarouselProps) => {
   const handleTouchEnd = () => {
     if (touchStart - touchEnd > 100) {
       handleNext()
-    }
-
-    if (touchStart - touchEnd < -100) {
+    } else if (touchStart - touchEnd < -100) {
       handlePrev()
     }
   }
@@ -62,7 +75,9 @@ const Carousel = ({ reviews }: CarouselProps) => {
           {`<`}
         </button>
 
-        <ReviewCard review={reviews[currentReview]} />
+        <div className={styles.reviewCard__container}>
+          <ReviewCard review={reviews[currentReview]} />
+        </div>
 
         <button
           className={`${styles.review__button} ${styles.review__button_next}`}

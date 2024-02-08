@@ -6,6 +6,11 @@
   padding: 1em 0 0;
 }
 
+.reviewCard__container {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
 .review__button {
   position: absolute;
   top: 50%;
