@@ -1,0 +1,51 @@
+.whyUs__section {
+  background-color: var(--clr-secondary);
+  margin: 0;
+  padding: 3em 0;
+}
+
+.whyUs__container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.whyUs__title {
+  font-family: var(--font-accent);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--clr-accent-soft);
+  text-align: center;
+}
+
+.whyUs__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+  gap: 1.5em;
+}
+
+.whyUs__card {
+  padding: 1em;
+  border-radius: 10px;
+  background-color: var(--clr-accent-soft);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.benefit__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-accent);
+  margin-bottom: 10px;
+}
+
+.benefit__text {
+  font-size: 1rem;
+  font-family: var(--font-basic);
+  color: var(--clr-terciary);
+  line-height: 1.5em;
+  padding: 0.5em 0;
+}
