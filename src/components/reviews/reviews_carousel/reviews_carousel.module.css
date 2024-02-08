@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5 0;
   padding: 1em 0 0;
 }
 
@@ -16,11 +15,11 @@
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   z-index: 10;
   font-family: var(--font-basic);
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   background-color: var(--clr-accent); /* Add a background color */
   color: white; /* Change the color of the text to white */
@@ -32,11 +31,11 @@
 }
 
 .review__button_prev {
-  left: 0;
+  left: 20px;
 }
 
 .review__button_next {
-  right: 0;
+  right: 20px;
 }
 
 .pagination {
