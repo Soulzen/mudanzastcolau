@@ -1,11 +1,7 @@
 import React from "react"
 
 import styles from "./reviews.module.css"
-<<<<<<< HEAD
-// import Carousel from "./carousel/carousel"
-=======
 import Carousel from "./reviews_carousel/reviews_carousel"
->>>>>>> DIY-Carousel
 
 import { reviews } from "@/data"
 import Link from "next/link"
@@ -13,10 +9,6 @@ import Link from "next/link"
 const Reviews = () => {
   return (
     <section className={styles.reviews__section}>
-<<<<<<< HEAD
-      <h2>Reviews</h2>
-      {/* <Carousel reviews={reviews} /> */}
-=======
       <div className={styles.reviews__container}>
         <h2 className={styles.reviews__title}>
           ¿Qué opinan nuestros clientes?
@@ -31,7 +23,6 @@ const Reviews = () => {
           </span>
         </p>
       </div>
->>>>>>> DIY-Carousel
     </section>
   )
 }
