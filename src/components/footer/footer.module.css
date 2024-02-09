@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--clr-terciary);
+  padding: 2em 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer__title {
+  font-family: var(--font-accent);
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.footer__col {
+  margin: 1.5em 0;
+}
+
+.footer__subtitle {
+  font-family: var(--font-accent);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--clr-accent);
+  margin: 0.5em 0;
+}
+
+.footer__text {
+  font-size: 16px;
+  color: var(--clr-primary);
+}
+
+.footer__link {
+  font-size: 16px;
+  color: var(--clr-primary);
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  opacity: 0.75;
+}

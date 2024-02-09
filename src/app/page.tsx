@@ -5,6 +5,8 @@ import Presentation from "@/components/presentation/presentation"
 import Services from "@/components/services_section/services"
 import Reviews from "@/components/reviews/reviews"
 import WhyUs from "@/components/why_us/why_us"
+import Footer from "@/components/footer/footer"
+import Conclusion from "@/components/conclusion/conclusion"
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <Services />
       <Reviews />
       <WhyUs />
+      <Conclusion />
     </main>
   )
 }

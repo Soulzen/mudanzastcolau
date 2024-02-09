@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Figtree } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header/header"
+import Footer from "@/components/footer/footer"
 
 const figtree = Figtree({ subsets: ["latin"] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${figtree.className}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

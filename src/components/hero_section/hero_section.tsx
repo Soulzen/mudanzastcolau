@@ -2,6 +2,7 @@ import Image from "next/image"
 import React from "react"
 
 import styles from "./hero_section.module.css"
+import CTA from "../cta/cta"
 
 const HeroSection = () => {
   return (
@@ -17,9 +18,10 @@ const HeroSection = () => {
             Simplifique su mudanza con Mudanzas TColau: Experiencia,
             confiabilidad y cuidado
           </p>
-          <a href="/" className={styles.hero__button}>
+          {/* <a href="/" className={styles.hero__button}>
             Obtener presupuesto
-          </a>
+          </a> */}
+          <CTA text="OBTENER PRESUPUESTO" />
         </div>
 
         <Image
