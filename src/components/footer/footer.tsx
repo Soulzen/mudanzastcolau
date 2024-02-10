@@ -1,93 +1,51 @@
 import React from "react"
 import styles from "./footer.module.css"
+import TruckIcon from "@/icons/TruckIcon"
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <h2 className={styles.footer__title}>Just scratching the surface</h2>
-        <div className={`${styles.row} ${styles.footer__content}`}>
-          <div className={styles.footer__about}>
-            <div className={`${styles.col} ${styles.footer__col}`}>
-              <h4 className={styles.footer__subtitle}>About our company</h4>
-              <p className={styles.footer__text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-          </div>
-          <div className={styles.row}>
-            <div className={`${styles.col} ${styles.footer__col}`}>
-              <h4 className={styles.footer__subtitle}>Getting around</h4>
-              <ul className={styles.footer__list}>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    Home
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    About
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className={`${styles.col} ${styles.footer__col}`}>
-              <h4 className={styles.footer__subtitle}>Other things</h4>
-              <ul className={styles.footer__list}>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    Lorem ipsum
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    dolor
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    sit amet
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    consectetur
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className={`${styles.col} ${styles.footer__col}`}>
-              <h4 className={styles.footer__subtitle}>And more</h4>
-              <ul className={styles.footer__list}>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    Lorem ipsum
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    dolor
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    sit amet
-                  </a>
-                </li>
-                <li className={styles.footer__item}>
-                  <a className={styles.footer__link} href="#">
-                    consectetur
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className={styles.subsection}>
+          <h3 className={styles.heading}>
+            <TruckIcon className={styles.icon} />
+            Mudanzas TColau
+          </h3>
+          <p className={styles.text}>
+            © 2024 MudanzasTcolau. Todos los derechos reservados.
+          </p>
+
+          <p className={styles.text}>
+            Dirección: Carrer Guillermo Roch, 63-57 46185 La Pobla de Vallbona,
+            Valencia
+          </p>
+
+          <p className={styles.text}>Teléfono: 627749549</p>
+
+          <p className={styles.text}>
+            Correo electrónico: tcolau@tcolaumudanzas.com
+          </p>
+
+          <p className={styles.text}>Síguenos en: [Enlaces a redes sociales]</p>
+        </div>
+        <div className={styles.subsection}>
+          <h3 className={styles.heading}>Enlaces</h3>
+          <ul className={styles.list}>
+            <li>
+              <a className={styles.link} href="/">
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="/servicios">
+                Servicios
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="/contacto">
+                Contacto
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

@@ -15,8 +15,11 @@
 }
 
 .hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   color: var(--clr-white);
-  margin: 0 auto 2em;
+  margin: 0 auto 2em 0;
 }
 
 .hero__title {

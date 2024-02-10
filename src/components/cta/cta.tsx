@@ -19,13 +19,14 @@ const CTA = ({ text, dark }: CTAProps) => {
   }
 
   return (
-    <button
+    <a
+      href="tel:627749549"
       className={`${styles.cta} ${dark ? styles.cta_dark : null}`}
-      onClick={handleClick}
+      // onClick={handleClick}
     >
       {toggle ? <PhoneIcon className={styles.icon} /> : null}
       {label}
-    </button>
+    </a>
   )
 }
 
