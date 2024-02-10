@@ -37,3 +37,11 @@
   line-height: 1.5;
   margin-bottom: 0.5em;
 }
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+}

@@ -9,9 +9,11 @@ const Services = () => {
     <section className={styles.services__section}>
       <div className={styles.services__container}>
         <h2 className={styles.services__title}>Nuestros servicios</h2>
-        {services.map((service) => (
-          <ServiceCard key={service.id} service={service} />
-        ))}
+        <div className={styles.services__cards}>
+          {services.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -17,3 +17,11 @@
   color: var(--clr-accent-soft);
   text-align: center;
 }
+
+/* 600px or bigger */
+@media (min-width: 600px) {
+  .services__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -49,3 +49,17 @@
   line-height: 1.5em;
   padding: 0.5em 0;
 }
+
+@media (min-width: 600px) {
+  .whyUs__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whyUs__card:last-child {
+    grid-column: span 2;
+  }
+  .whyUs__card {
+    height: 100%;
+  }
+}
