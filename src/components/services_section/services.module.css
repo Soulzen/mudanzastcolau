@@ -11,6 +11,7 @@
 }
 
 .services__title {
+  margin-bottom: 1em;
   font-family: var(--font-accent);
   font-size: 2.5rem;
   font-weight: 700;
@@ -23,5 +24,11 @@
   .services__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .services__cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

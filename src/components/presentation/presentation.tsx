@@ -9,7 +9,8 @@ const Presentation = () => {
       <div className={styles.container}>
         <Image
           className={styles.presentation__image}
-          src="/[landscape]inventary-check.jpg"
+          src="/[portrait]loading-van-single.jpg"
+          // src="/[landscape]inventary-check.jpg"
           alt="Picture of the author"
           width={500}
           height={500}

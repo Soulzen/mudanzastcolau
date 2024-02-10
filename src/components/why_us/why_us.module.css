@@ -63,3 +63,12 @@
     height: 100%;
   }
 }
+
+@media (min-width: 900px) {
+  .whyUs__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .whyUs__card:last-child {
+    grid-column: 3;
+  }
+}
