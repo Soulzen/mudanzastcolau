@@ -5,7 +5,7 @@
   background-color: var(--clr-accent-soft);
   margin: 0;
   align-items: center;
-  padding: 5em 0 0;
+  padding: 5em 0 2em;
 }
 
 .container {
@@ -19,6 +19,7 @@
   margin: 0 auto 3em;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .presentation__content {
@@ -60,7 +61,8 @@
   }
 
   .presentation__image {
-    width: 40%; /* Increase the width to make the image bigger */
-    overflow: visible; /* Allow the image to overflow onto the content */
+    width: 40%;
+    overflow: visible;
+    /* aspect-ratio: initial; */
   }
 }

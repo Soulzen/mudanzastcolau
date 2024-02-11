@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./footer.module.css"
 import TruckIcon from "@/icons/TruckIcon"
+import Image from "next/image"
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -24,8 +25,6 @@ const Footer = () => {
           <p className={styles.text}>
             Correo electrónico: tcolau@tcolaumudanzas.com
           </p>
-
-          <p className={styles.text}>Síguenos en: [Enlaces a redes sociales]</p>
         </div>
         <div className={styles.subsection}>
           <h3 className={styles.heading}>Enlaces</h3>
@@ -43,6 +42,47 @@ const Footer = () => {
             <li>
               <a className={styles.link} href="/contacto">
                 Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.subsection}>
+          <h3 className={styles.heading}>Siguenos en</h3>
+          <ul className={styles.list}>
+            <li>
+              <a
+                className={styles.link}
+                href="https://www.instagram.com/mudanzastcolau/"
+              >
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  width={30}
+                  height={30}
+                />{" "}
+                @mudanzastcolau
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="#">
+                <Image
+                  src="/facebook.svg"
+                  alt="facebook"
+                  width={30}
+                  height={30}
+                />{" "}
+                /mudanzastcolau
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="tel:627749549">
+                <Image
+                  src="/whatsapp.svg"
+                  alt="whatsapp"
+                  width={30}
+                  height={30}
+                />{" "}
+                +34 627749549
               </a>
             </li>
           </ul>
