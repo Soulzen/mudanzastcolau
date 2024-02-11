@@ -4,23 +4,29 @@ import Link from "next/link"
 
 import styles from "./navbar.module.css"
 
-const NavBar = () => {
+type NavBarProps = {
+  desktop?: boolean
+}
+
+const NavBar = ({ desktop }: NavBarProps) => {
   return (
-    <nav className={styles.navbar}>
+    <nav
+      className={`${styles.navbar} ${desktop ? styles.navbar__desktop : null}`}
+    >
       <ul className={styles.navbar_nav}>
         <li className={styles.nav_item}>
           <Link href="#" className={styles.nav_link}>
-            Home
+            Inicio
           </Link>
         </li>
         <li className={styles.nav_item}>
           <Link href="#" className={styles.nav_link}>
-            Services
+            Servicios
           </Link>
         </li>
         <li className={styles.nav_item}>
           <Link href="#" className={styles.nav_link}>
-            Contact
+            Contacto
           </Link>
         </li>
       </ul>

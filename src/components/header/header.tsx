@@ -18,7 +18,8 @@ export function Header() {
           <TruckIcon className={styles.logo} />
           <h1 className={styles.heading}>Mudanzas TColau</h1>
         </div>
-        <button className={styles.nav_toggle} onClick={handleMobileMenuToggle}>
+        <NavBar desktop />
+        <button className={styles.nav_menu} onClick={handleMobileMenuToggle}>
           ☰
         </button>
       </div>

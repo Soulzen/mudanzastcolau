@@ -27,7 +27,31 @@
   color: white;
   text-transform: uppercase;
   font-family: var(--font-accent);
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.15em;
+}
+
+@media (min-width: 901px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar_nav {
+    flex-direction: row;
+  }
+
+  .nav_item {
+    padding: 0 0.5em;
+  }
+
+  .navbar__desktop {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar__desktop {
+    display: none;
+  }
 }

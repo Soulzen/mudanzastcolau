@@ -9,15 +9,26 @@ const HeroSection = () => {
     <section className={styles.hero__section}>
       <div className={styles.container}>
         <div className={styles.hero__content}>
+          {/* <h1 className={styles.hero__title}>
+            Experimente la diferencia con{" "}
+            <span className={styles.hero__title_span}>Mudanzas TColau:</span>{" "}
+            Mudanzas de calidad a un precio accesible
+          </h1> */}
           <h1 className={styles.hero__title}>
             Mudanzas{" "}
             <span className={styles.hero__title_span}>profesionales</span> para
             su tranquilidad
           </h1>
           <p className={styles.hero__text}>
+            Experimente una mudanza sin preocupaciones con nuestro servicio
+            profesional y asequible. Confíe en nuestra experiencia y cuidado
+            para una transición sin estrés a un precio que se ajusta a su
+            presupuesto.
+          </p>
+          {/* <p className={styles.hero__text}>
             Simplifique su mudanza con Mudanzas TColau: Experiencia,
             confiabilidad y cuidado
-          </p>
+          </p> */}
           {/* <a href="/" className={styles.hero__button}>
             Obtener presupuesto
           </a> */}

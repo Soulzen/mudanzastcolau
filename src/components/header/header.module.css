@@ -35,7 +35,7 @@
   line-height: 1.75rem /* 28px */;
 }
 
-.nav_toggle {
+.nav_menu {
   all: unset;
   color: var(--clr-white);
   background-color: var(--clr-terciary);
@@ -44,8 +44,14 @@
   padding: 1rem;
 }
 
-.nav_toggle:focus,
-.nav_toggle:hover {
+.nav_menu:focus,
+.nav_menu:hover {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 900px) {
+  .nav_menu {
+    display: none;
+  }
 }
