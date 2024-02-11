@@ -6,9 +6,10 @@ import { Review } from "@/data"
 
 interface CarouselProps {
   review: Review
+  main?: boolean
 }
 
-const ReviewCard = ({ review }: CarouselProps) => {
+const ReviewCard = ({ review, main }: CarouselProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const [isTooLong, setIsTooLong] = useState(false)
 
@@ -28,7 +29,11 @@ const ReviewCard = ({ review }: CarouselProps) => {
   }, [review])
 
   return (
-    <div className={styles.review__card}>
+    <div
+      className={`${styles.review__card} ${
+        main ? styles.review__card_main : styles.review__card_side
+      }`}
+    >
       <Image
         className={styles.review__image}
         src={review.image}

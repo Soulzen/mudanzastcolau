@@ -55,7 +55,7 @@ const Footer = () => {
                 href="https://www.instagram.com/mudanzastcolau/"
               >
                 <Image
-                  src="/instagram.svg"
+                  src="/social_media/instagram.svg"
                   alt="instagram"
                   width={30}
                   height={30}
@@ -66,7 +66,7 @@ const Footer = () => {
             <li>
               <a className={styles.link} href="#">
                 <Image
-                  src="/facebook.svg"
+                  src="/social_media/facebook.svg"
                   alt="facebook"
                   width={30}
                   height={30}
@@ -77,7 +77,7 @@ const Footer = () => {
             <li>
               <a className={styles.link} href="tel:627749549">
                 <Image
-                  src="/whatsapp.svg"
+                  src="/social_media/whatsapp.svg"
                   alt="whatsapp"
                   width={30}
                   height={30}

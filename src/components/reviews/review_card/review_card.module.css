@@ -5,8 +5,8 @@
   justify-content: center;
   margin: 1em 0.5em;
   padding: 1em 3em;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
   background-color: var(--clr-secondary);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,4 +58,21 @@
 .collapsed {
   max-height: 150px;
   overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .review__card_main {
+    width: 50%;
+  }
+
+  .review__card_side {
+    width: 25%;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 899px) {
+  .review__card_side {
+    display: none;
+  }
 }
