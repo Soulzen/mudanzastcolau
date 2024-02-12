@@ -57,9 +57,9 @@ const Carousel = ({ reviews }: CarouselProps) => {
   }
 
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 100) {
+    if (touchStart - touchEnd > 50) {
       handleNext()
-    } else if (touchStart - touchEnd < -100) {
+    } else if (touchStart - touchEnd < -50) {
       handlePrev()
     }
   }
