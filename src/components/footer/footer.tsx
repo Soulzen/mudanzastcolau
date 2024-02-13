@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./footer.module.css"
 import TruckIcon from "@/icons/TruckIcon"
 import Image from "next/image"
+import Link from "next/link"
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -30,19 +31,19 @@ const Footer = () => {
           <h3 className={styles.heading}>Enlaces</h3>
           <ul className={styles.list}>
             <li>
-              <a className={styles.link} href="/">
+              <Link className={styles.link} href="/">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.link} href="/servicios">
+              <Link className={styles.link} href="/servicios">
                 Servicios
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.link} href="/contacto">
+              <Link className={styles.link} href="/contacto">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

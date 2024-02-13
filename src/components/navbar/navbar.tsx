@@ -25,7 +25,7 @@ const NavBar = ({ desktop }: NavBarProps) => {
           </Link>
         </li>
         <li className={styles.nav_item}>
-          <Link href="/contact" className={styles.nav_link}>
+          <Link href="/contacto" className={styles.nav_link}>
             Contacto
           </Link>
         </li>
