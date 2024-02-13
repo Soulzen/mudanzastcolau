@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-secondary);
+  padding: 1em;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: var(--clr-accent);
+  margin-bottom: 1em;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.label {
+  font-size: 1.125rem;
+  font-family: var(--font-basic);
+  color: var(--clr-white);
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.25em;
+}
+
+.input {
+  padding: 1em 0.625em;
+  font-size: 1rem;
+  font-family: var(--font-basic);
+  color: var(--clr-terciary);
+  background-color: var(--clr-accent-soft);
+  border: 1px solid var(--clr-terciary);
+}
+
+.textarea {
+  padding: 1em 0.625em;
+  font-size: 1rem;
+  font-family: var(--font-basic);
+  color: var(--clr-terciary);
+  background-color: var(--clr-accent-soft);
+  border: 1px solid var(--clr-terciary);
+  resize: none;
+}
+
+.button {
+  padding: 1em 0.625em;
+  font-size: 1rem;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  color: var(--clr-white);
+  background-color: var(--clr-accent);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
