@@ -8,7 +8,11 @@ import styles from "./contact_form.module.css"
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xdoqgary")
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>
+    return (
+      <div className={styles.submited}>
+        <h2 className={styles.thank_text}>¡Gracias por su mensaje!</h2>
+      </div>
+    )
   }
   return (
     <form className={styles.form} onSubmit={handleSubmit}>

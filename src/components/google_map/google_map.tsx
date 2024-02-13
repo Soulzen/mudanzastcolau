@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api"
 
+import styles from "./google_map.module.css"
+
 // const containerStyle = {
 //   width: "400px",
 //   height: "400px"
@@ -26,11 +28,12 @@ function GoogleMaps() {
     //     <div>Map loading...</div>
     //   )
     <iframe
+      className={styles.map}
       frameBorder="0"
       style={{ border: 0 }}
       referrerPolicy="no-referrer-when-downgrade"
-      src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Mudanzas+Tcolau,Pobla+de+Vallbona+Valencia&zoom=14`}
-      //   allowFullScreen
+      src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Mudanzas+Tcolau,Pobla+de+Vallbona+Valencia`}
+      allowFullScreen
     ></iframe>
   )
 }

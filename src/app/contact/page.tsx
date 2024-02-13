@@ -56,7 +56,7 @@ const Contact = () => {
               <GoogleMaps />
             </div>
           </div>
-          <div className={styles.content__form}>
+          <div className={styles.form}>
             <ContactForn />
           </div>
         </div>
