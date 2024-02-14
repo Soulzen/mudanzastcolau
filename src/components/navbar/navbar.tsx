@@ -20,7 +20,7 @@ const NavBar = ({ desktop }: NavBarProps) => {
           </Link>
         </li>
         <li className={styles.nav_item}>
-          <Link href="#" className={styles.nav_link}>
+          <Link href="/servicios" className={styles.nav_link}>
             Servicios
           </Link>
         </li>

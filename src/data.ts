@@ -77,6 +77,7 @@ export interface Service {
   id: number
   title: string
   description: string
+  extended: string
   image: string
 }
 
@@ -86,6 +87,8 @@ export const services: Service[] = [
     title: "Inventario",
     description:
       "Nuestro servicio de inventario asegura la documentación y seguimiento preciso de sus pertenencias durante la mudanza, brindando tranquilidad sobre su llegada segura.",
+    extended:
+      "En Mudanzas TColau entendemos la importancia de cada uno de sus objetos personales. Nuestro servicio de inventario no solo documenta meticulosamente cada artículo, sino que también proporciona un seguimiento detallado durante todo el proceso de mudanza. Con nosotros, puede estar seguro de que sus pertenencias llegarán a su destino de manera segura y sin contratiempos.",
     image: "/services_images/inventory.jpg"
   },
   {
@@ -93,6 +96,8 @@ export const services: Service[] = [
     title: "Embalaje",
     description:
       "Ofrecemos servicios de embalaje profesional para garantizar la seguridad de sus pertenencias durante el transporte, utilizando materiales de embalaje ecológicos.",
+    extended:
+      "Confíe en nuestro equipo experto para embalar sus pertenencias con el máximo cuidado y atención al detalle. Utilizamos materiales de embalaje ecológicos de la más alta calidad para garantizar la seguridad de sus artículos durante el transporte. Con Mudanzas TColau, puede tener la tranquilidad de saber que sus objetos más preciados están en buenas manos.",
     image: "/services_images/packing.jpg"
   },
   {
@@ -100,6 +105,8 @@ export const services: Service[] = [
     title: "Desmontaje y Montaje",
     description:
       "Nuestro equipo se encarga del desmontaje y montaje de muebles, asegurando que sus pertenencias lleguen a su destino en perfectas condiciones.",
+    extended:
+      "Nuestro equipo está capacitado para manejar el desmontaje y montaje de muebles de manera eficiente y profesional. Ya sea un sofá, una cama o una mesa, nos encargamos de cada pieza con el máximo cuidado y atención. Con Mudanzas TColau, puede estar seguro de que sus muebles llegarán a su destino en perfectas condiciones, listos para ser instalados sin problemas.",
     image: "/services_images/assembly.jpg"
   },
   {
@@ -107,6 +114,8 @@ export const services: Service[] = [
     title: "Montacargas",
     description:
       "Contamos con montacargas para facilitar el transporte de artículos pesados y voluminosos, garantizando la seguridad y eficiencia durante el proceso de mudanza.",
+    extended:
+      "Para artículos pesados y voluminosos, contamos con montacargas especializados para garantizar un transporte seguro y eficiente. Nuestro equipo experto maneja estos equipos con habilidad y precaución, asegurando que sus pertenencias lleguen a su destino sin daños ni contratiempos. En Mudanzas TColau, su seguridad y satisfacción son nuestra máxima prioridad.",
     image: "/services_images/lift_truck.png"
   },
   {
@@ -114,6 +123,8 @@ export const services: Service[] = [
     title: "Almacenamiento",
     description:
       "Ofrecemos soluciones de almacenamiento seguro para sus pertenencias, ya sea a corto o largo plazo, brindando tranquilidad durante el proceso de mudanza.",
+    extended:
+      "¿Necesita almacenamiento seguro para sus pertenencias durante un período de tiempo determinado? En Mudanzas TColau, ofrecemos soluciones de almacenamiento flexibles, tanto a corto como a largo plazo. Con instalaciones seguras y bien cuidadas, puede confiar en nosotros para proteger sus objetos mientras espera el momento adecuado para su entrega.",
     image: "/services_images/storage.jpg"
   },
   {
@@ -121,6 +132,8 @@ export const services: Service[] = [
     title: "Artículos Frágiles",
     description:
       "Nuestro equipo se especializa en el transporte de artículos frágiles, asegurando que lleguen a su destino en perfectas condiciones.",
+    extended:
+      "Entendemos la importancia de sus artículos frágiles y delicados. Nuestro equipo altamente capacitado se especializa en el transporte de estos objetos, asegurando que lleguen a su destino en perfectas condiciones. Con Mudanzas TColau, puede confiar en nosotros para manejar sus artículos más preciados con el máximo cuidado y atención.",
     image: "/services_images/fragile.jpg"
   }
 ]
