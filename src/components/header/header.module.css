@@ -51,8 +51,33 @@
   outline-offset: 2px;
 }
 
+.telefono {
+  display: none;
+  gap: 0.5em;
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+@media (min-width: 600px) {
+  .telefono {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media (min-width: 900px) {
   .nav_menu {
     display: none;
+  }
+  .telefono {
+    display: flex;
+    align-items: center;
   }
 }

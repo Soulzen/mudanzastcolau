@@ -7,6 +7,7 @@ import Link from "next/link"
 import styles from "./header.module.css"
 import NavBar from "../navbar/navbar"
 import TruckIcon from "../../icons/TruckIcon"
+import PhoneIcon from "@/icons/PhoneIcon"
 
 export function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -27,6 +28,10 @@ export function Header() {
           <h1 className={styles.heading}>Mudanzas TColau</h1>
         </Link>
         <NavBar desktop />
+        <a href="tel:+34627749546" className={styles.telefono}>
+          <PhoneIcon className={styles.icon} />
+          <p>+34 627749546</p>
+        </a>
         <button className={styles.nav_menu} onClick={handleMobileMenuToggle}>
           ☰
         </button>
