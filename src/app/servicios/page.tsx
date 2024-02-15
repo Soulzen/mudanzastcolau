@@ -11,7 +11,7 @@ const Services = () => {
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.intro}>
-            <h1>Nuestros Servicios de Mudanza</h1>
+            <h1>Nuestros Servicios</h1>
             <p>
               En Mudanzas TColau, nos esforzamos por brindar un servicio
               completo y confiable para hacer que su experiencia de mudanza sea

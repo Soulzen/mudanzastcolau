@@ -83,4 +83,29 @@
   .even {
     flex-direction: row-reverse;
   }
+
+  .intro {
+    max-width: 900px;
+    padding: 1em 0 2em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
+  }
+
+  .outro {
+    max-width: 900px;
+    padding: 1em 0 2em;
+    margin: 0 auto;
+  }
+
+  .outro p {
+    font-size: 1.25rem;
+  }
 }
