@@ -4,6 +4,8 @@ import React from "react"
 import styles from "./hero_section.module.css"
 import CTA from "../cta/cta"
 
+import hero_image from "@/../public/[portrait]Tcolau.png"
+
 const HeroSection = () => {
   return (
     <section className={styles.hero__section}>
@@ -37,10 +39,9 @@ const HeroSection = () => {
 
         <Image
           className={styles.hero__image}
-          src="/[portrait]moving-van.jpg"
+          src={hero_image}
           alt="man carrying boxes"
-          width={350}
-          height={615}
+          sizes="(max-width: 900px) 100vw,  33vw"
           priority
         />
       </div>
