@@ -41,7 +41,7 @@ const HeroSection = () => {
           className={styles.hero__image}
           src={hero_image}
           alt="man carrying boxes"
-          sizes="(max-width: 900px) 100vw,  50vw"
+          sizes="(max-width: 900px) 100vw,  45vw"
           priority
         />
       </div>
