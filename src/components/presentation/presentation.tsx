@@ -2,6 +2,7 @@ import Image from "next/image"
 import React from "react"
 
 import styles from "./presentation.module.css"
+import presentationImage from "@/../public/[portrait]loading-van-single.jpg"
 
 const Presentation = () => {
   return (
@@ -9,11 +10,9 @@ const Presentation = () => {
       <div className={styles.container}>
         <Image
           className={styles.presentation__image}
-          src="/[portrait]loading-van-single.jpg"
-          // src="/[landscape]inventary-check.jpg"
+          src={presentationImage}
           alt="Picture of the author"
-          width={500}
-          height={500}
+          sizes="(max-width: 900px) 100vw,  50vw"
         />
 
         <div className={styles.presentation__content}>
