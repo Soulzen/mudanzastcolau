@@ -14,11 +14,29 @@
   max-width: 1200px;
 }
 
-.presentation__image {
+.image__container {
   display: flex;
-  margin: 0 auto 3em;
-  aspect-ratio: 16/9;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+  width: 100%;
+  /* aspect-ratio: 9/16; */
+  /* background-color: red; */
+  margin-bottom: 2em;
+}
+
+.first__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentation__image_portrait {
+  border-radius: 10px;
+  width: 48%;
   object-fit: cover;
+}
+
+.presentation__image_landscape {
   border-radius: 10px;
 }
 

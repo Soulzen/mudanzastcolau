@@ -4,7 +4,7 @@ import React from "react"
 import styles from "./hero_section.module.css"
 import CTA from "../cta/cta"
 
-import heroImage from "@/../public/[portrait]Tcolau.png"
+import heroImage from "@/../public/hero_images/[portrait]Tcolau.png"
 
 const HeroSection = () => {
   return (
