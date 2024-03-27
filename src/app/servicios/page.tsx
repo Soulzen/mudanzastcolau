@@ -31,8 +31,8 @@ const Services = () => {
                 <Image
                   src={service.image}
                   alt={service.title}
-                  width={300}
-                  height={300}
+                  sizes="(max-width: 900px) 100vw,  50vw"
+                  priority={service.id < 3 ? true : false}
                   className={styles.image}
                 />
                 <div className={styles.text}>

@@ -4,7 +4,7 @@ import React from "react"
 import styles from "./hero_section.module.css"
 import CTA from "../cta/cta"
 
-import hero_image from "@/../public/[portrait]Tcolau.png"
+import heroImage from "@/../public/[portrait]Tcolau.png"
 
 const HeroSection = () => {
   return (
@@ -39,7 +39,7 @@ const HeroSection = () => {
 
         <Image
           className={styles.hero__image}
-          src={hero_image}
+          src={heroImage}
           alt="man carrying boxes"
           sizes="(max-width: 900px) 100vw,  50vw"
           priority
