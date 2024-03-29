@@ -73,6 +73,7 @@
 @media (min-width: 900px) {
   .service {
     display: flex;
+    align-items: center;
     gap: 2em;
   }
 
