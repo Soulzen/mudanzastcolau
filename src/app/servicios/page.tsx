@@ -4,6 +4,7 @@ import styles from "./page.module.css"
 
 import { services } from "@/data"
 import Image from "next/image"
+import CTA from "@/components/cta/cta"
 
 const Services = () => {
   return (
@@ -50,6 +51,7 @@ const Services = () => {
               comenzar a planificar su mudanza sin estrés!
             </p>
           </div>
+          <CTA text="Obtener presupuesto" dark />
         </div>
       </section>
     </main>
