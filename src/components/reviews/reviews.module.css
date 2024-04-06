@@ -43,6 +43,10 @@
   transition: all 0.3s ease;
 }
 
+.reviews__source__link:hover {
+  cursor: pointer;
+}
+
 .googleReviews__image {
   height: 150px;
   width: auto;
