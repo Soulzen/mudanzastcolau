@@ -21,11 +21,18 @@
   color: var(--clr-terciary);
 }
 
+.reviews__google {
+  margin: 3em 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .reviews__source {
   font-size: 1.125rem;
   font-weight: 700;
   font-family: var(--font-accent);
-  margin: 3em 0 1em;
   text-align: center;
   color: var(--clr-terciary);
 }
@@ -34,4 +41,9 @@
   color: var(--clr-accent);
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.googleReviews__image {
+  height: 150px;
+  width: auto;
 }
