@@ -35,7 +35,7 @@ const Reviews = () => {
           >
             <Image
               src={googleReviews}
-              alt="Google Reviews"
+              alt="Google Reviews image"
               className={styles.googleReviews__image}
             />
           </Link>
