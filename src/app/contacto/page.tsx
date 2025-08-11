@@ -27,7 +27,7 @@ const Contact = () => {
                   Información de contacto
                 </h2>
                 <ul>
-                  <li>
+                  {/* <li>
                     <a
                       href="mailto:tcolau@mudanzastcolau.com"
                       className={styles.link}
@@ -35,7 +35,7 @@ const Contact = () => {
                       <MailIcon className={styles.icon} />
                       tcolau@mudanzastcolau.com
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="tel:+34627749546" className={styles.link}>
                       <PhoneIcon className={styles.icon} />

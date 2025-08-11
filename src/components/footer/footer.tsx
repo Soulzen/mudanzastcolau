@@ -21,11 +21,7 @@ const Footer = () => {
             Valencia
           </p>
 
-          <p className={styles.text}>Teléfono: 627749549</p>
-
-          <p className={styles.text}>
-            Correo electrónico: tcolau@tcolaumudanzas.com
-          </p>
+          <p className={styles.text}>Teléfono: 613196340</p>
         </div>
         <div className={styles.subsection}>
           <h3 className={styles.heading}>Enlaces</h3>
@@ -76,14 +72,17 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className={styles.link} href="tel:627749549">
+              <a
+                className={styles.link}
+                href="https://api.whatsapp.com/send?phone=34613196340"
+              >
                 <Image
-                  src="/social_media/whatsapp.svg"
+                  src="/social_media/whatsapp_logo.svg"
                   alt="whatsapp"
                   width={30}
                   height={30}
                 />{" "}
-                +34 627749549
+                +34 613196340
               </a>
             </li>
           </ul>

@@ -5,6 +5,7 @@ import { Figtree } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header/header"
 import Footer from "@/components/footer/footer"
+import WhatsApp from "@/components/whatsapp/whatsapp"
 
 const figtree = Figtree({ subsets: ["latin"] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${figtree.className}`}>
         <Header />
+        <WhatsApp />
         {children}
         <Footer />
         <Analytics />

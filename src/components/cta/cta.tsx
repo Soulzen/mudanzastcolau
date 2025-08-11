@@ -15,12 +15,12 @@ const CTA = ({ text, dark }: CTAProps) => {
 
   const handleClick = () => {
     setToggle(!toggle)
-    setLabel(toggle ? text : "6 2 7 7 4 9 5 4 9")
+    setLabel(toggle ? text : "6 1 3 1 9 6 3 4 0")
   }
 
   return (
     <a
-      href="tel:627749549"
+      href="https://api.whatsapp.com/send?phone=34613196340"
       className={`${styles.cta} ${dark ? styles.cta_dark : null}`}
       // onClick={handleClick}
     >
