@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react"
-import Image from "next/image"
 
 import styles from "./reviews_carousel.module.css"
 
@@ -26,26 +25,18 @@ const Carousel = ({ reviews }: CarouselProps) => {
   }
 
   const handlePrev = () => {
-    const reviewCardContainer = document.querySelector(
-      `.${styles.reviewCard__container}`
-    ) as HTMLElement
-    reviewCardContainer.style.opacity = "0"
-    setTimeout(() => {
-      setCurrentReview(prevReview(currentReview))
-      reviewCardContainer.style.opacity = "1"
-    }, 200)
+    setCurrentReview(prevReview)
   }
 
   const handleNext = () => {
-    const reviewCardContainer = document.querySelector(
-      `.${styles.reviewCard__container}`
-    ) as HTMLElement
-    reviewCardContainer.style.opacity = "0"
-    setTimeout(() => {
-      setCurrentReview(nextReview(currentReview))
-      reviewCardContainer.style.opacity = "1"
-    }, 200)
+    setCurrentReview(nextReview)
   }
+
+  const visibleReviews = [
+    reviews[prevReview(currentReview)],
+    reviews[currentReview],
+    reviews[nextReview(currentReview)]
+  ]
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.targetTouches[0].clientX)
@@ -75,27 +66,34 @@ const Carousel = ({ reviews }: CarouselProps) => {
         <button
           className={`${styles.review__button} ${styles.review__button_prev}`}
           onClick={handlePrev}
+          aria-label="Reseña anterior"
         >
-          {`<`}
+          ‹
         </button>
 
-        <div className={styles.reviewCard__container}>
-          <ReviewCard review={reviews[prevReview(currentReview)]} />
-          <ReviewCard review={reviews[currentReview]} main />
-          <ReviewCard review={reviews[nextReview(currentReview)]} />
+        <div className={styles.reviewCard__container} key={currentReview}>
+          {visibleReviews.map((review, index) => (
+            <ReviewCard
+              key={`${review.id}-${currentReview}-${index}`}
+              review={review}
+              main={index === 1}
+            />
+          ))}
         </div>
 
         <button
           className={`${styles.review__button} ${styles.review__button_next}`}
           onClick={handleNext}
+          aria-label="Siguiente reseña"
         >
-          {`>`}
+          ›
         </button>
       </div>
       <div className={styles.pagination}>
         {reviews.map((review, index) => (
           <button
-            key={index}
+            key={review.id}
+            aria-label={`Ver reseña ${index + 1}`}
             className={`${styles.pagination__button} ${
               index === currentReview ? styles.pagination__button_active : ""
             }`}

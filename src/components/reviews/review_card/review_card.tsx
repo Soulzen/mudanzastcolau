@@ -41,11 +41,17 @@ const ReviewCard = ({ review, main }: CarouselProps) => {
         width={70}
         height={70}
       />
+      <span className={styles.review__quote} aria-hidden="true">
+        “
+      </span>
       <h3 className={styles.review__name}>{review.name}</h3>
       <div className={styles.review__rating}>
         {Array.from({ length: review.rating }).map((_, index) => (
-          <span key={index}>⭐</span>
+          <span key={index} aria-hidden="true">
+            ★
+          </span>
         ))}
+        <span className={styles.review__rating_text}>{review.rating}.0</span>
       </div>
       <p
         ref={paragraphRef}
@@ -61,7 +67,7 @@ const ReviewCard = ({ review, main }: CarouselProps) => {
         </button>
       ) : isTooLong ? (
         <button className={styles.button} onClick={() => setIsExpanded(true)}>
-          Seguir leyendo...
+          Seguir leyendo
         </button>
       ) : null}
     </div>
