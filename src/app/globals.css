@@ -27,8 +27,15 @@ Color de acento: Naranja terroso: #f7941e */
 }
 
 body {
+  min-height: 100vh;
+  min-height: 100dvh;
   font-family: var(--font-basic);
   font-size: 21px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 img {

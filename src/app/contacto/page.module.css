@@ -1,6 +1,15 @@
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .main__section {
+  flex: 1;
   padding: 3em 0;
   background-color: var(--clr-accent-soft);
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -55,7 +64,7 @@
 }
 
 .content__map {
-  min-height: 400px;
+  height: 400px;
 }
 
 @media (min-width: 900px) {
@@ -69,6 +78,10 @@
   .content__map {
     flex: 1 1 0;
     width: 50%;
+  }
+
+  .content__map {
+    height: 450px;
   }
 
   .content__info {

@@ -7,7 +7,7 @@ import GoogleMaps from "@/components/google_map/google_map"
 
 const Contact = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.main__section}>
         <div className={styles.container}>
           <div className={styles.content__info}>
