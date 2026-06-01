@@ -32,12 +32,6 @@ const Carousel = ({ reviews }: CarouselProps) => {
     setCurrentReview(nextReview)
   }
 
-  const visibleReviews = [
-    reviews[prevReview(currentReview)],
-    reviews[currentReview],
-    reviews[nextReview(currentReview)]
-  ]
-
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.targetTouches[0].clientX)
     setTouchEnd(e.targetTouches[0].clientX)
@@ -71,14 +65,21 @@ const Carousel = ({ reviews }: CarouselProps) => {
           ‹
         </button>
 
-        <div className={styles.reviewCard__container} key={currentReview}>
-          {visibleReviews.map((review, index) => (
-            <ReviewCard
-              key={`${review.id}-${currentReview}-${index}`}
-              review={review}
-              main={index === 1}
-            />
-          ))}
+        <div className={styles.review__viewport}>
+          <div
+            className={styles.reviewCard__container}
+            style={{
+              transform: `translateX(calc(var(--center-offset) - ${currentReview} * var(--slide-step)))`
+            }}
+          >
+            {reviews.map((review, index) => (
+              <ReviewCard
+                key={review.id}
+                review={review}
+                main={index === currentReview}
+              />
+            ))}
+          </div>
         </div>
 
         <button

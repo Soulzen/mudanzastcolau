@@ -1,21 +1,32 @@
 .review__content {
-  max-width: 1120px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
 .review__carousel {
+  --slide-size: 100%;
+  --slide-gap: 1.25em;
+  --slide-step: calc(var(--slide-size) + var(--slide-gap));
+  --center-offset: 0px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em 3.5em 0;
+  padding: 1em 0 2.5em;
+}
+
+.review__viewport {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5em 1.25em 2.25em;
+  margin: -1.5em -1.25em -2.25em;
 }
 
 .reviewCard__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  animation: cardsIn 0.35s ease both;
+  display: flex;
+  gap: var(--slide-gap);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
 }
 
 .review__button {
@@ -81,23 +92,8 @@
   background-color: var(--clr-accent);
 }
 
-@keyframes cardsIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px) scale(0.99);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .reviewCard__container {
-    animation: none;
-  }
-
+  .reviewCard__container,
   .review__button,
   .pagination__button {
     transition: none;
@@ -106,44 +102,62 @@
 
 @media (min-width: 900px) {
   .review__carousel {
-    padding: 1.5em 4em 0;
+    --slide-size: 42%;
+    --slide-gap: 1em;
+    --center-offset: calc((100% - var(--slide-size)) / 2);
+    padding: 0.5em 3em 1.5em;
   }
 
-  .reviewCard__container {
-    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.15fr) minmax(0, 0.72fr);
-    align-items: center;
-    gap: 1.25em;
+  .review__viewport {
+    padding: 2.25em 1.5em 2.75em;
+    margin: -2.25em -1.5em -2.75em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .review__carousel {
+    --slide-size: 72%;
+    --center-offset: calc((100% - var(--slide-size)) / 2);
   }
 }
 
 @media (max-width: 599px) {
   .review__carousel {
-    padding: 0.5em 0 0;
+    --slide-size: 88%;
+    --center-offset: calc((100% - var(--slide-size)) / 2);
+    padding: 0.5em 0 1em;
+  }
+
+  .review__viewport {
+    padding: 1em 1.5em 1.75em;
+    margin: -1em -1.5em -1.75em;
   }
 
   .review__button {
-    top: auto;
-    bottom: -4.25em;
-    width: 42px;
-    height: 42px;
-    font-size: 1.75rem;
-    transform: none;
+    top: 50%;
+    bottom: auto;
+    width: 36px;
+    height: 36px;
+    font-size: 1.45rem;
+    background-color: rgba(46, 50, 63, 0.9);
+    box-shadow: 0 8px 18px rgba(46, 50, 63, 0.24);
+    transform: translateY(-50%);
   }
 
   .review__button:hover,
   .review__button:focus-visible {
-    transform: scale(1.05);
+    transform: translateY(-50%) scale(1.05);
   }
 
   .review__button_prev {
-    left: calc(50% - 3.25em);
+    left: 0.15em;
   }
 
   .review__button_next {
-    right: calc(50% - 3.25em);
+    right: 0.15em;
   }
 
   .pagination {
-    margin-top: 5em;
+    margin-top: 1.25em;
   }
 }
